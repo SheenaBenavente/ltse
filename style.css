@@ -13,6 +13,9 @@ body {
 header {
     margin: 20px;
     border: 1px solid white;
+    background-image: url('/images/geometrical-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar {
