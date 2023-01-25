@@ -2,20 +2,25 @@ body {
     display: block;
 }
 
-.wrapper {
-    margin: auto;
+.container {
+    display: flex;
+    justify-content: center;
     gap: 60px;
     border: 1px solid yellow;
-    min-width: 221px;
-    background-color: #1D344E;
-}
-
-header {
-    margin: 20px;
-    border: 1px solid white;
     background-image: url('/images/geometrical-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+header {
+    width: 1110px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    border: 1px solid white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
 }
 
 .navbar {
@@ -23,6 +28,7 @@ header {
     flex-direction: row;
     border: 1px solid violet;
     justify-content: space-between;
+    margin-bottom: 8%;
 
 }
 .primary-nav {
@@ -31,6 +37,11 @@ header {
 
 .secondary-nav {
     border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 8%;
+
 }
 
 .primary-items {
@@ -42,6 +53,12 @@ header {
 
 .secondary-items {
     display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+.description {
+    display: flex;
     flex-direction: row;
     gap: 1em;
     border: 1px solid green;
@@ -51,12 +68,29 @@ header {
     max-width: 58px;
 }
 
+.underline {
+    border-bottom: 1px solid black;
+
+}
+.rectangle {
+    background-color: gold;
+    width: 265px;
+    height: 4px;
+}
+
 ul {
     list-style-type: none;
+    font-size: 26px;
 }
 
 h1 {
     color: #ffff;
+    font-size: 86px;
+}
+
+h3 {
+    color: #ffff;
+    font-size: 20px;
 }
 
 a {
@@ -69,4 +103,8 @@ a:hover {
     color: blue;
 }
 
+p {
+    color: #ffff;
+    font-size: 20px;
 
+}
