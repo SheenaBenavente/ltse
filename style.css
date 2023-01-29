@@ -1,133 +1,163 @@
 body {
     display: block;
-    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
-    background-image: url(./images/geometrical-bg.png);
-    margin: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid yellow;
+    border: 1px solid rgb(175, 13, 13);
 }
 
-.container {
-    border: 1px solid yellow;
- }
+.section--1 {
+    background-image: url(./images/geometrical-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    border: 1px solid rgb(115, 0, 255);
+}
+
+.section--3 {
+    border: 1px solid rgb(115, 0, 255);
+    background-color: #030E25;
+}
 
 header {
     display: flex;
     justify-content: center;
     flex-direction: column;    
-    border: 1px solid white;
     max-width: 1110px;
     margin: auto;
     margin-top: 60px;
+    border: 1px solid rgb(6, 155, 160);
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    border: 1px solid violet;
     justify-content: space-between;
+    border: 1px solid violet;
 }
 
-.primary-nav {
-    border: 1px solid blue;
-    font-weight: 700;
+
+.primary--nav .primary--item--1, .primary--item--3, .primary--item--2--active  {
+    font-size: 10px;
+    font-size: 26px;
+    font-weight: 400;
 }
 
-.secondary-nav {
-    border: 1px solid red;
+.primary--nav .primary--item--2--active {
+    color: white;
+}
+
+#primary--items {
     display: flex;
-    flex-direction: row;
-    font-weight: 500;
-    gap: 7em;
-}
-
-.primary-items {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1em;
-    margin-bottom: 20%;
+    gap: 40px;
+    padding: 0;
     border: 1px solid green;
 }
 
-.secondary-items {
+#secondary--items {
     display: flex;
-    flex-direction: column;
-    border: 1px solid green;
-    height: 100%;
-    position: relative;
-}
-
-.description {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+    gap: 46px;
     border: 1px solid green;
 }
-
+ 
 .logo img {
     max-width: 58px;
+    margin-bottom: 98px;
 }
 
-.footer-logo img {
+.footer--logo img {
     max-width: 58px;
+    margin-right: 320px;
 }
 
-.footer-list {
+.footer--list {
     display: flex;
     flex-direction: row;
+    gap: 100px;
 }
-.footer-items {
-    display: flex;
-    flex-direction: column;
+
+.footer--item, .footer--item--head {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 16px;
+
+}
+
+.footer--items {
+    font-weight: 400;
+}
+
+.footer--item--head {
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.thin--line {
+    display: block;
+    color: white;
+    width: 1110px;
+    height: 4px;
 }
 
 footer {
     display: flex;
-    justify-content: center;
-    flex-direction: column;    
     background-color: #030E25;
-    border: 1px solid #7799d8;
     max-width: 1110px;
     margin: auto;
     margin-top: 60px;
+    border: 1px solid #7799d8;
 }
+
 .underline {
-    background-color: #C5D0DF;
-    width: 100%;
-    height: 2px;
-    border: 1px solid rgb(128, 0, 111);
-}
-
-.secondary-selected {
-    background-color: gold;
-    width: 265px;
+    background-color: #ffb800;
+    margin-top: 30px;
+    width: 40px;
     height: 4px;
-    position: absolute;
-    bottom: -3px;
+    display: none;
     border: 1px solid rgb(255, 255, 255);
 }
 
-.primary-selected {
-    background-color: gold;
-    width: 100px;
-    height: 4px;
-    border: 1px solid rgb(255, 255, 255);
+.primary--item--2--active .underline {
+    display: block;
+}
+
+.secondary--item--3 .underline {
+    display: block;
+    width: 230px;
+}
+
+.link--name {
+    font-weight: 600;
+    font-size: 26px;
+    display: inline-block;
+    color: #7D93AD;
+    text-decoration: none;
+}
+
+.secondary--link--name {
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    color: #7D93AD;
+    text-decoration: none;
+}
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     list-style-type: none;
-    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     color: #ffff;
     font-size: 4em;
-
 }
 
 h3 {
@@ -136,19 +166,21 @@ h3 {
 }
 
 p {
-    color: #ffff;
-    font-size: 1em;
-    font-weight: 400;
+    display: block;
+    list-style-type: none;
+    color: #7D93AD;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 32px;
+    margin-top: 14px;
+
 }
 
 a {
     display: flex;
-    color: white;
     text-decoration: none;
 }
 
 a:hover {
-    color: blue;
+    color: rgb(255, 255, 255);
 }
-
-
