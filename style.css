@@ -166,8 +166,16 @@ h2 {
 }
 
 h3 {
-    color: #ffff;
-    font-size: 1.2em;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 86px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 16px;
 }
 
 p {
@@ -287,6 +295,7 @@ input::placeholder {
 
 .feature--headline {
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .arrow {
@@ -352,11 +361,60 @@ li {
     margin-top: 100px;
  }
 
- .card{
-    height: 440px;
-    width: 350px;
+.cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.card {    
     border-left: 1px solid #D6DDE8;
     border-right: 1px solid #D6DDE8;
     border-bottom: 1px solid #D6DDE8;
     border-top: 4px solid #974C37;
+    max-height: 440px;
+    padding-left: 33px;
+    max-width: 350px;
+    margin-bottom: 70px;
+}
+
+ .card h4 {
+    max-width: 284px;
+ }
+
+ .card--title {
+    margin-top: 0;
+    margin-bottom: 50px;
+ }
+ #card--overline {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    max-width: 284px;
+ }
+
+ .card--paragraph {
+    margin-bottom: 94px;
+    max-width: 284px;
+    font-size: 17px;
+    line-height: 26px;
+    padding-right: 30px;
+ }
+
+ .author {
+    margin-bottom: 30px;
+    max-width: 284px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7D93AD;
+    text-transform: uppercase;
+    font-weight: 500;
+ }
+
+ .card--section {
+    flex-direction: column;
+    margin: auto;
+    max-width: 1110px;
+
+    border: 1px solid red;
+
  }
