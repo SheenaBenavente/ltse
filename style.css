@@ -11,7 +11,7 @@ body {
     border: 1px solid rgb(115, 0, 255);
 }
 
-.section--4 {
+.section--5 {
     border: 1px solid rgb(115, 0, 255);
     background-color: #030E25;
 }
@@ -104,6 +104,7 @@ footer {
     max-width: 1110px;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 112px;
     border: 1px solid #7799d8;
 }
 
@@ -245,7 +246,7 @@ input::placeholder {
     border: 1px solid #C5D0DF;
 }
 
-.section--3 {
+.section--4 {
     background-image: url(./images/Subscribe.png);
     background-size: cover;
     background-repeat: no-repeat;   
@@ -371,36 +372,62 @@ li {
     border-left: 1px solid #D6DDE8;
     border-right: 1px solid #D6DDE8;
     border-bottom: 1px solid #D6DDE8;
-    border-top: 4px solid #974C37;
     max-height: 440px;
     padding-left: 33px;
     max-width: 350px;
     margin-bottom: 70px;
 }
 
- .card h4 {
-    max-width: 284px;
- }
+#brown {
+    border-top: 4px solid #974C37;
+}
 
- .card--title {
+#blue {
+    border-top: 4px solid #9BC6BA;
+}
+
+#orange {
+    border-top: 4px solid #DF8B3D;
+}
+
+#green {
+    border-top: 4px solid #7F9E52;
+}
+
+#pink {
+    border-top: 4px solid #DCC2BF;
+}
+
+#yellow {
+    border-top: 4px solid #C7B61B;
+}
+
+
+
+.card h4 {
+    max-width: 284px;
+}
+
+.card--title {
     margin-top: 0;
     margin-bottom: 50px;
- }
- #card--overline {
+}
+ 
+#card--overline {
     margin-top: 45px;
     margin-bottom: 30px;
     max-width: 284px;
- }
+}
 
- .card--paragraph {
+.card--paragraph {
     margin-bottom: 94px;
     max-width: 284px;
     font-size: 17px;
     line-height: 26px;
     padding-right: 30px;
- }
+}
 
- .author {
+.author {
     margin-bottom: 30px;
     max-width: 284px;
     font-size: 13px;
@@ -408,13 +435,12 @@ li {
     color: #7D93AD;
     text-transform: uppercase;
     font-weight: 500;
- }
+}
 
- .card--section {
+.section--3 {
     flex-direction: column;
     margin: auto;
     max-width: 1110px;
 
     border: 1px solid red;
-
- }
+}
