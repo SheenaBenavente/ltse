@@ -7,7 +7,7 @@ body {
 .section--1 {
     background-image: url(./images/geometrical-bg.png);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     border: 1px solid rgb(115, 0, 255);
 }
 
@@ -18,7 +18,7 @@ body {
 
 header {
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column;
     max-width: 1110px;
     margin: auto;
     margin-top: 60px;
@@ -55,7 +55,7 @@ header {
     gap: 46px;
     border: 1px solid green;
 }
- 
+
 .logo img {
     max-width: 58px;
     margin-bottom: 98px;
@@ -141,7 +141,7 @@ footer {
     text-decoration: none;
 }
 
-  
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -204,7 +204,6 @@ li p {
 }
 
 a {
-    display: flex;
     text-decoration: none;
 }
 
@@ -249,7 +248,7 @@ input::placeholder {
 .section--4 {
     background-image: url(./images/Subscribe.png);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     border: 1px solid rgb(115, 0, 255);
 }
 
@@ -279,7 +278,7 @@ input::placeholder {
 }
 
 .article--hero {
-    max-width: 825px;
+    width: 100%;
     margin-bottom: 67px;
     border: 1px solid #d1d8e2;
 }
@@ -325,19 +324,19 @@ input::placeholder {
 .featured--article {
     display: flex;
     justify-content: center;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: flex-start;
-    width: 825px;
-    border: 1px solid rgb(115, 0, 255); 
+    max-width: 825px;
+    border: 1px solid rgb(115, 0, 255);
 }
 
 li {
     text-decoration: none;
     list-style-type: none;
-}    
+}
 
 .topics--title {
-    font-size: 26;
+    font-size: 26px;
     line-height: 32px;
     font-weight: 700;
     color: #030E25;
@@ -350,7 +349,7 @@ li {
     color: #536377 ;
 }
  .topics {
-    border: 1px solid rgb(115, 0, 255); 
+    border: 1px solid rgb(115, 0, 255);
  }
 
  .section--2 {
@@ -368,37 +367,38 @@ li {
     border: 1px solid red;
 }
 
-.card {    
+.card {
     border-left: 1px solid #D6DDE8;
     border-right: 1px solid #D6DDE8;
     border-bottom: 1px solid #D6DDE8;
     max-height: 440px;
     padding-left: 33px;
-    max-width: 350px;
+    width: 350px;
     margin-bottom: 70px;
+    box-sizing: border-box;
 }
 
-#brown {
+.brown {
     border-top: 4px solid #974C37;
 }
 
-#blue {
+.blue {
     border-top: 4px solid #9BC6BA;
 }
 
-#orange {
+.orange {
     border-top: 4px solid #DF8B3D;
 }
 
-#green {
+.green {
     border-top: 4px solid #7F9E52;
 }
 
-#pink {
+.pink {
     border-top: 4px solid #DCC2BF;
 }
 
-#yellow {
+.yellow {
     border-top: 4px solid #C7B61B;
 }
 
@@ -412,7 +412,7 @@ li {
     margin-top: 0;
     margin-bottom: 50px;
 }
- 
+
 #card--overline {
     margin-top: 45px;
     margin-bottom: 30px;
@@ -443,4 +443,25 @@ li {
     max-width: 1110px;
 
     border: 1px solid red;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        color: red;
+        font-size: 64px;
+    }
+
+    .topics--title {
+        display: none;
+    }
+
+    .section--2 {
+        flex-direction: column-reverse;
+    }
+
+    .topics ul {
+        display: flex;
+        gap: 5px;
+        justify-content: space-evenly;
+    }
 }
