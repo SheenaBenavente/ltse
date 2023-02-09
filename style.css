@@ -63,38 +63,24 @@ header {
 
 .footer--logo img {
     max-width: 58px;
+}
+
+.footer--logo {
     margin-right: 320px;
 }
 
 .footer--list {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 80px;   
+    border: 1px solid rgb(115, 0, 255);
 }
 
-.footer--item--head {
-    color: white;
-    margin-bottom: 8px;
-    font-size: 16px;
-
-}
-.footer--item{
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #9BAEC7;
-}
-.footer--items {
-    font-weight: 400;
-}
-
-.footer--item--head {
-    font-weight: 700;
-    margin-bottom: 36px;
-}
 
 .thin--line {
     background-color: #C5D0DF;
-    width: 1110px;
+    max-width: 1110px;
     height: 1px;
 }
 
@@ -111,9 +97,8 @@ footer {
 .underline {
     background-color: #ffb800;
     margin-top: 30px;
-    width: 40px;
-    height: 4px;
-    display: none;
+    width: 41px;
+    min-height: 4px;
 }
 
 .primary--item--2--active .underline {
@@ -150,7 +135,6 @@ nav ul {
 
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -187,17 +171,18 @@ p {
     font-size: 21px;
     line-height: 32px;
     margin-bottom: 32px;
-    margin-top: 14px;
+    margin-top: 6px;
 }
 
 li p {
     color:#9BAEC7;
     font-size: 14px;
 }
+
 #CTA--copy {
     font-size: 21px;
     font-weight: 400;
-    width: 540px;
+    max-width: 540px;
     height: 96px;
     line-height: 32px;
     margin-bottom: 20px;
@@ -212,7 +197,7 @@ a:hover {
 }
 
 .subscribe {
-    width: 1110px;
+    max-width: 1110px;
     display: block;
     margin: 0 auto;
     border: 1px solid #7799d8;
@@ -239,8 +224,8 @@ input::placeholder {
 
 
 #subscriber--email {
-    width: 268px;
-    height: 53px;
+    min-width: 268px;
+    min-height: 53px;
     box-sizing: border-box;
     border: 1px solid #C5D0DF;
 }
@@ -275,6 +260,7 @@ input::placeholder {
     font-weight: 700;
     font-size: 26px;
     line-height: 36px;
+    color: #030E25;
 }
 
 .article--hero {
@@ -291,6 +277,10 @@ input::placeholder {
     letter-spacing: 1.5px;
     color: #FFBA0A;
     margin-bottom: 46px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    max-width: 284px;
+    
 }
 
 .feature--headline {
@@ -299,8 +289,8 @@ input::placeholder {
 }
 
 .arrow {
-    height: 12px;
-    width: 24px;
+    max-height: 12px;
+    max-width: 24px;
     margin-left: 22px;
 }
 
@@ -339,15 +329,17 @@ li {
     font-size: 26px;
     line-height: 32px;
     font-weight: 700;
-    color: #030E25;
+    color: #030E25; 
+    margin-bottom: 41px;
 }
 
 .topics li a {
     font-size: 20px;
     line-height: 57px;
     font-weight: 500;
-    color: #536377 ;
+    color: #536377; 
 }
+
  .topics {
     border: 1px solid rgb(115, 0, 255);
  }
@@ -364,16 +356,15 @@ li {
 .cards {
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .card {
     border-left: 1px solid #D6DDE8;
     border-right: 1px solid #D6DDE8;
     border-bottom: 1px solid #D6DDE8;
-    max-height: 440px;
+    min-height: 440px;
     padding-left: 33px;
-    width: 350px;
+    max-width: 350px;
     margin-bottom: 70px;
     box-sizing: border-box;
 }
@@ -413,12 +404,6 @@ li {
     margin-bottom: 50px;
 }
 
-#card--overline {
-    margin-top: 45px;
-    margin-bottom: 30px;
-    max-width: 284px;
-}
-
 .card--paragraph {
     margin-bottom: 94px;
     max-width: 284px;
@@ -441,14 +426,37 @@ li {
     flex-direction: column;
     margin: auto;
     max-width: 1110px;
-
-    border: 1px solid red;
 }
 
-@media (max-width: 1000px) {
+.footer--item--head {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    border: 1px solid rgb(115, 0, 255);
+}
+
+.footer--item {
+    font-size: 16px;
+    color: #9BAEC7;
+    border: 1px solid rgb(179, 102, 7);
+    margin-bottom: 10px;
+}
+
+.footer--items {
+    font-weight: 400;
+    margin-top: 0;
+    border: 1px solid rgb(115, 0, 255);
+}
+
+@media (max-width: 768px) {
     h1 {
-        color: red;
         font-size: 64px;
+    }
+
+    .section--2, .section--3, .subscribe, .footer {
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     .topics--title {
@@ -463,5 +471,75 @@ li {
         display: flex;
         gap: 5px;
         justify-content: space-evenly;
+    }
+
+    #subscriber--email {
+        min-width: 268px;
+        min-height: 53px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 52px;
+    }
+
+    .footer--logo {
+        margin-right: 20px;
+    }
+
+    .footer--list {
+        gap: 40px;
+    }
+
+    .article--details {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .footer {
+        flex-wrap: wrap;
+        gap: 52px;
+    }
+
+    .footer--logo {
+        margin-right: 20px;
+    }
+
+    .footer--list {
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 42px;
+        line-height: 45px;
+    }
+
+    #subscriber--email{
+        margin-bottom: 20px ;
+    }
+
+    .section--2, .section--3, .subscribe, .footer {
+        margin-left: 24px;
+        margin-right: 20px;
+    }
+
+    #CTA--copy {
+        margin-bottom: 40px;
+    }
+
+    #subscriber--email {
+        min-width: 268px;
+        min-height: 53px;
+    }
+
+    .article--details {
+        display: none;
     }
 }
