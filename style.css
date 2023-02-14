@@ -68,7 +68,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 80px;   
+    gap: 80px;
     border: 1px solid rgb(115, 0, 255);
 }
 
@@ -280,7 +280,7 @@ input::placeholder {
     margin-top: 45px;
     margin-bottom: 30px;
     max-width: 284px;
-    
+
 }
 
 .feature--headline {
@@ -329,7 +329,7 @@ li {
     font-size: 26px;
     line-height: 32px;
     font-weight: 700;
-    color: #030E25; 
+    color: #030E25;
     margin-bottom: 41px;
 }
 
@@ -337,7 +337,7 @@ li {
     font-size: 20px;
     line-height: 57px;
     font-weight: 500;
-    color: #536377; 
+    color: #536377;
 }
 
 .section--2 {
@@ -446,7 +446,7 @@ li {
     display: none;
 }
 
-.mobile--nav {
+.hide {
     display: none;
 }
 
@@ -497,13 +497,13 @@ li {
     }
 
     .section--4 {
-        background-position: bottom; 
+        background-position: bottom;
        }
 
 }
 
 @media (max-width: 480px) {
-    
+
     .footer {
         flex-wrap: wrap;
         gap: 52px;
@@ -552,22 +552,16 @@ li {
         display: none;
     }
 
-    .navbar {
-        display: none;
-    }
-
-    nav {
+    .navbar, #secondary--items {
         display: none;
     }
 
     .mobile--nav {
-        display: block;
         flex-direction: column;
         margin-top: 0px;
         margin-bottom: 0px;
-        
     }
-    
+
     li a {
         color: #7D93AD;
         font-weight: 500;
@@ -614,7 +608,7 @@ li {
         color: #3A4C62;
         display: block;
         margin-bottom: 0px;
-    } 
+    }
 
     .topics_arrow {
         display: block;
@@ -642,5 +636,12 @@ li {
     }
 
     .menu {
-        display: none;
+        height: 15px;
     }
+
+    .mobile--nav li {
+        border-bottom: 2px solid white;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}

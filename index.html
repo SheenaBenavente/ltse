@@ -38,7 +38,7 @@
             </div>
 
             <nav>
-                <ul class="secondary--nav" id="secondary--items">
+                <ul class="secondary--nav" id="secondary--items"> <!-- desktop -->
                     <li class="secondary--item--1">
                         <a href="#" class="secondary--link--name">LTSE Bridge</a>
                         <p>For Startups</p>
@@ -53,29 +53,21 @@
                         <div class="underline"></div>
                     </li>
                 </ul>
-                <div class="thin--line">
-            </nav>
-            <ul class="flex mobile--nav">
                 <div class="flex nav--head">
                     <img src="./images/LTSE_logo.png" class="logo" alt="logo">
-                    <img src="./images/exit_menu.png" class="exit--menu" alt="Exit Menu">
-                    <img src="./images/menu.png" class="menu" alt="Menu">
-                </div>    
-                <li><a href="#">Exchange</a></li>
-                <div class="thin--line"></div>
-                <li><a href="#">Software</a></li>
-                <div class="thin--line"></div>
-                <li><a href="#">Coalition</a></li>
-                <div class="thin--line"></div>
-                <li><a href="#">LTSE Bridge</a></li>
-                <div class="thin--line"></div>
-                <li><a href="#">LTSE Horizon</a></li>
-                <div class="thin--line"></div>
-                <li><a href="#">Knowledge Base</a></li>
-                <div class="underline"></div>
-                <div class="thin--line" id="active"></div>
+                    <img src="./images/exit_menu.png" id="mobile-exit-menu-icon" class="exit--menu hide" alt="Exit Menu">
+                    <img src="./images/menu.png" id="mobile-menu-icon" class="menu" alt="Menu">
+                </div>
+                <ul id="mobile-menu-list" class="flex mobile--nav hide">
+                    <li><a href="#">Exchange</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Coalition</a></li>
+                    <li><a href="#">LTSE Bridge</a></li>
+                    <li><a href="#">LTSE Horizon</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                </ul>
+            </nav>
 
-            </ul>
             <div class="headline">
                 <h1>Knowledge for 21st Century Company Builders</h1>
             </div>
@@ -101,8 +93,8 @@
             <div class="topics--header">
                 <div class="topics--title">Topics</div>
                 <img src="./images/topics_arrow.png" class="topics_arrow" alt="arrow icon">
-            </div> 
-            <div class="thin--line"></div>   
+            </div>
+            <div class="thin--line"></div>
             <ul>
                 <li><a href="#">Inspiration</a></li>
                 <li><a href="#">Startup Guide</a></li>
@@ -228,6 +220,7 @@
             </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
