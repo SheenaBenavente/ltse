@@ -469,7 +469,6 @@ li {
     }
 
     .topics ul {
-        display: flex;
         gap: 5px;
         justify-content: space-evenly;
     }
@@ -598,7 +597,6 @@ li {
     }
 
     .topics ul {
-        display: flex;
         flex-direction: column;
     }
 
@@ -643,5 +641,9 @@ li {
         border-bottom: 2px solid white;
         padding-bottom: 20px;
         margin-bottom: 20px;
+    }
+
+    .hide {
+        display: none;
     }
 }
