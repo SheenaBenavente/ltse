@@ -44,6 +44,7 @@ header {
     display: flex;
     gap: 40px;
     padding: 0;
+    border-bottom: none;
 }
 
 #secondary--items {
@@ -72,6 +73,9 @@ header {
     border: 1px solid rgb(115, 0, 255);
 }
 
+.footer--items li {
+    margin-bottom: 16px;
+}
 
 .thin--line {
     background-color: #C5D0DF;
@@ -104,6 +108,10 @@ header {
 
 .primary--item--2--active .underline {
     display: block;
+}
+
+.secondary--nav {
+    border-bottom: 1px solid #C5D0DF;
 }
 
 .secondary--item--3 .underline {
@@ -201,7 +209,6 @@ a:hover {
     max-width: 1110px;
     display: block;
     margin: 0 auto;
-    border: 1px solid #7799d8;
 }
 
 .subscribe--button {
@@ -322,7 +329,6 @@ input::placeholder {
 li {
     text-decoration: none;
     list-style-type: none;
-    margin-bottom: 8px;
 }
 
 .topics--title {
@@ -557,7 +563,7 @@ li {
 
     .mobile--nav {
         flex-direction: column;
-        margin-top: 0px;
+        margin-top: 52px;
         margin-bottom: 0px;
     }
 
@@ -578,7 +584,7 @@ li {
     }
 
     .logo {
-        margin-bottom: 52px;
+        margin-bottom: 24px;
         max-width: 52px;
     }
 
@@ -590,10 +596,6 @@ li {
     #active {
         margin-bottom: 0px;
         margin-top: 0px;
-    }
-
-    .headline {
-        margin-top: 52px;
     }
 
     .topics ul {
@@ -618,6 +620,7 @@ li {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 16px;
     }
 
     .topics li a {
@@ -646,4 +649,5 @@ li {
     .hide {
         display: none;
     }
+
 }
