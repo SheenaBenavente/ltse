@@ -69,7 +69,6 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 80px;
-    border: 1px solid rgb(115, 0, 255);
 }
 
 .footer--items li {
@@ -92,7 +91,6 @@ footer {
     max-width: 1110px;
     margin: auto;
     padding-top: 60px;
-    border: 1px solid #7799d8;
 }
 
 .underline {
@@ -429,19 +427,16 @@ li {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 36px;
-    border: 1px solid rgb(115, 0, 255);
 }
 
 .footer--item {
     font-size: 16px;
     color: #9BAEC7;
-    border: 1px solid rgb(179, 102, 7);
     margin-bottom: 8px;
 }
 
 .footer--items {
     font-weight: 400;
-    border: 1px solid rgb(115, 0, 255);
     margin-top: 0;
 }
 
