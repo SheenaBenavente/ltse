@@ -30,16 +30,16 @@ mobileExitMenuIcon.addEventListener('click', function() {
   mobileExitMenuIcon.classList.add('hide');
 });
 
-// Click on the Topics menu hides the topics
+// Click on the Topics menu icon opens the topics
 
 topicsMenuListIcon.addEventListener('click', function() {
   // 1. Unhide topics menu links/list
   topicsMenuList.classList.remove('hide');
 
-  // 2. Show topics menu close icon
+  // 2. Hide the topics menu icon 
   topicsMenuListIcon.classList.add('hide');
 
-  // 3. Hide the exit menu icon
+  // 3. Show topics menu close icon
   topicsExitMenuIcon.classList.remove('hide');
 });
 
@@ -50,7 +50,7 @@ topicsExitMenuIcon.addEventListener('click', function() {
 
   // 2. Show topics menu icon
   topicsMenuListIcon.classList.remove('hide');
-  
+
   // 3. Hide the topics exit menu icon
   topicsExitMenuIcon.classList.add('hide');
 })

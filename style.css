@@ -448,13 +448,14 @@ li {
     margin-top: 0;
 }
 
-.topics_arrow {
+.topics_arrow, .topics_arrow_close, .mobile--nav {
     display: none;
 }
 
-.hide {
+.nav--head {
     display: none;
 }
+
 
 @media (max-width: 1000px) {
     h1 {
@@ -610,12 +611,6 @@ li {
         margin-bottom: 0px;
     }
 
-    .topics_arrow {
-        display: block;
-        min-width: 10px;
-        max-height: 10px;
-    }
-
     .topics--header {
         display: flex;
         justify-content: space-between;
@@ -630,6 +625,7 @@ li {
     .nav--head {
         justify-content: space-between;
         margin-top: 24px;
+        display: flex;
     }
 
     .exit--menu {
@@ -646,6 +642,15 @@ li {
         margin-bottom: 20px;
     }
 
+    .topics_arrow {
+        display: flex;
+        min-width: 10px;
+        max-height: 10px;
+    }
+
+    .topics_arrow_close {
+        display: flex;
+    }
     .hide {
         display: none;
     }
