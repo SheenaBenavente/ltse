@@ -480,7 +480,7 @@ li {
         min-height: 53px;
     }
 
-    .footer {
+    .footer--container {
         flex-wrap: wrap;
         gap: 52px;
     }
@@ -509,7 +509,7 @@ li {
         margin-top: 0px;
     }
 
-    .footer {
+    .footer--container {
         flex-wrap: wrap;
         gap: 52px;
     }
@@ -539,6 +539,7 @@ li {
     .section--2 {
         margin-top: 52px;
     }
+
     .section--2, .section--3, .subscribe, .footer--container, .header--background {
         margin-left: 24px;
         margin-right: 20px;
