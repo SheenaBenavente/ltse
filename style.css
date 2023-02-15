@@ -4,22 +4,22 @@ body {
     margin: 0;
 }
 
-.section--1 {
-    background-image: url(./images/geometrical-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .footer {
     background-color: #030E25;
     min-height: 500px;
 }
 
 header {
+    background-image: url(./images/geometrical-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header--background {
     justify-content: center;
     flex-direction: column;
     max-width: 1110px;
     margin: auto;
+    
 }
 
 .navbar {
@@ -28,7 +28,6 @@ header {
     justify-content: space-between;
     margin-top: 60px;
 }
-
 
 .primary--nav .primary--item--1, .primary--item--3, .primary--item--2--active  {
     font-size: 10px;
@@ -83,19 +82,16 @@ header {
     height: 1px;
 }
 
-.footer {
+footer {
     background-color: #030E25;
     min-height: 500px;
-    margin-top: 60px;
 }
 
 .footer--container {
     display: flex;
-    background-color: #030E25;
     max-width: 1110px;
     margin: auto;
     padding-top: 60px;
-    margin-bottom: 112px;
     border: 1px solid #7799d8;
 }
 
@@ -192,7 +188,6 @@ li p {
     font-size: 21px;
     font-weight: 400;
     max-width: 540px;
-    height: 96px;
     line-height: 32px;
     margin-bottom: 20px;
 }
@@ -207,6 +202,7 @@ a:hover {
 
 .subscribe {
     max-width: 1110px;
+    min-height: 600px;
     display: block;
     margin: 0 auto;
 }
@@ -247,6 +243,7 @@ input::placeholder {
 .input--section {
     margin-bottom: 200px;
     margin-top: 150PX;
+    padding-top: 120px;
 }
 
 
@@ -462,7 +459,7 @@ li {
         font-size: 64px;
     }
 
-    .header, .section--2, .section--3, .subscribe, .footer {
+    .header--background, .section--2, .section--3, .footer--container, .subscribe {
         margin-left: 24px;
         margin-right: 24px;
     }
@@ -473,6 +470,7 @@ li {
 
     .section--2 {
         flex-direction: column-reverse;
+        margin-top: 52px;
     }
 
     .topics-list {
@@ -508,13 +506,13 @@ li {
         background-position: bottom;
     }
 
-
-
-
-
 }
 
 @media (max-width: 480px) {
+
+    footer {
+        margin-top: 0px;
+    }
 
     .footer {
         flex-wrap: wrap;
@@ -546,7 +544,7 @@ li {
     .section--2 {
         margin-top: 52px;
     }
-    .section--2, .section--3, .subscribe, .footer, .header {
+    .section--2, .section--3, .subscribe, .footer--container, .header--background {
         margin-left: 24px;
         margin-right: 20px;
     }
@@ -583,11 +581,6 @@ li {
     .thin--line {
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-
-    header {
-        margin-top: 0px;
-        margin-left: 24px;
     }
 
     .logo {
@@ -641,6 +634,9 @@ li {
     .menu {
         height: 15px;
     }
+    .mobile--nav {
+    display: flex;
+    }
 
     .mobile--nav li {
         border-bottom: 2px solid white;
@@ -657,6 +653,24 @@ li {
     .topics_arrow_close {
         display: flex;
     }
+
+   
+
+    .section--4 {
+        min-height: 400px;
+    }
+
+    .input--section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .article--hero {
+        margin-bottom: 0PX;
+    }
+
     .hide {
         display: none;
     }

@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class="section--1">
-        <header class="flex header">
+    <header class="flex header">
+        <div class="header--background">
             <div class="navbar">
                 <div class="logo" alt="LTSE logo">
                     <img src="./images/LTSE_logo.png" alt="logo">
@@ -36,7 +36,6 @@
                     </ul>
                 </nav>
             </div>
-
             <nav>
                 <!-- desktop -->
                 <ul class="secondary--nav" id="secondary--items"> 
@@ -74,123 +73,126 @@
             <div class="headline">
                 <h1>Knowledge for 21st Century Company Builders</h1>
             </div>
-        </header>
-    </div>
-    <div class="flex section--2">
-        <div class="featured--article">
-            <div class="article--details">
-                <img src="./images/star.png" class="star" alt="star icon">
-                <div class="featured--title">Featured Article</div>
+        </div>    
+    </header>
+    <main>
+        <div class="flex section--2">
+            <div class="featured--article">
+                <div class="article--details">
+                    <img src="./images/star.png" class="star" alt="star icon">
+                    <div class="featured--title">Featured Article</div>
+                </div>
+                <img src="./images/featured_hero.jpeg" class="article--hero" alt="featured--hero">
+                <div class="overline category">INSPIRATION</div>
+                <h2 class="feature--headline">Set company's startup accelerator as Y Combinator, Techstars, etc.</h2>
+                <p class="feature--description">Captable.io builds accelerator-specific features in collaboration with top
+                    accelerators like Y Combinator, Techstars, etc.</p>
+                <div class="flex article--link">
+                    <div class="link">read article</div>
+                    <img src="./images/arrow.png" class="arrow" alt="arrow icon">
+                </div>
             </div>
-            <img src="./images/featured_hero.jpeg" class="article--hero" alt="featured--hero">
-            <div class="overline category">INSPIRATION</div>
-            <h2 class="feature--headline">Set company's startup accelerator as Y Combinator, Techstars, etc.</h2>
-            <p class="feature--description">Captable.io builds accelerator-specific features in collaboration with top
-                accelerators like Y Combinator, Techstars, etc.</p>
-            <div class="flex article--link">
-                <div class="link">read article</div>
-                <img src="./images/arrow.png" class="arrow" alt="arrow icon">
+            <!-- topics menu -->
+            <div class="topics">
+                <div class="topics--header">
+                    <div class="topics--title">Topics</div>
+                    <img src="./images/topics_arrow.png" class="topics_arrow" id="topics-menu-open" alt="open arrow icon">
+                    <img src="./images/topics_arrow_close.png" class="topics_arrow_close hide" id="topics-menu-close" alt="close arrow icon">
+                </div>
+                <ul id="topics-menu-list" class="topics-list hide">
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Startup Guide</a></li>
+                    <li><a href="#">Cash</a></li>
+                    <li><a href="#">Equity</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
             </div>
         </div>
-        <!-- topics menu -->
-        <div class="topics">
-            <div class="topics--header">
-                <div class="topics--title">Topics</div>
-                <img src="./images/topics_arrow.png" class="topics_arrow" id="topics-menu-open" alt="open arrow icon">
-                <img src="./images/topics_arrow_close.png" class="topics_arrow_close hide" id="topics-menu-close" alt="close arrow icon">
-            </div>
-            <ul id="topics-menu-list" class="topics-list hide">
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Startup Guide</a></li>
-                <li><a href="#">Cash</a></li>
-                <li><a href="#">Equity</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">News</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="section--3">
-        <h4 class="card--title">Popular Reads</h4>
-        <div class="flex cards">
-            <div class="card brown" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card blue" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card orange" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card green" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card pink" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card yellow" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card blue" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card orange" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
-            <div class="card brown" id="">
-                <div class="overline">Name</div>
-                <h4>A Guide to cap tables for the busy founder.</h4>
-                <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
-                    quis nostrud.</p>
-                <div class="author">Author</div>
-            </div>
+        <div class="section--3">
+            <h4 class="card--title">Popular Reads</h4>
+            <div class="flex cards">
+                <div class="card brown" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card blue" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card orange" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card green" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card pink" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card yellow" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card blue" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card orange" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
+                <div class="card brown" id="">
+                    <div class="overline">Name</div>
+                    <h4>A Guide to cap tables for the busy founder.</h4>
+                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                        quis nostrud.</p>
+                    <div class="author">Author</div>
+                </div>
 
-        </div>
-    </div>
-    <div class="section--4">
-        <div class="subscribe">
-            <div class="input--section">
-                <h2>Stay in touch</h2>
-                <p id="CTA--copy">Lorem ipsum dolor sit amet, consectetur adipiscing sed ac nulla nequivamus et varius.
-                </p>
-                <input type="email" id="subscriber--email" placeholder="Your Email">
-                <button class="subscribe--button">SUBSCRIBE</button>
             </div>
         </div>
-    </div>
-    <div class=footer>
-        <footer class="footer--container">
+        <div class="section--4">
+            <div class="subscribe">
+                <div class="input--section">
+                    <h2>Stay in touch</h2>
+                    <p id="CTA--copy">Lorem ipsum dolor sit amet, consectetur adipiscing sed ac nulla nequivamus et varius.
+                    </p>
+                    <input type="email" id="subscriber--email" placeholder="Your Email">
+                    <button class="subscribe--button">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </main>    
+
+    <footer>
+        <div class="footer--container">
             <div class="footer--logo">
                 <img src="./images/LTSE_logo.png" alt="logo">
             </div>
@@ -222,8 +224,8 @@
                     <li><a href="#" class="footer--item">Blog</a></li>
                 </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>    
     <script src="./script.js"></script>
 </body>
 
