@@ -475,7 +475,9 @@ li {
         flex-direction: column-reverse;
     }
 
-    .topics ul {
+    .topics-list {
+        display: flex;
+        flex-direction: row;
         gap: 5px;
         justify-content: space-evenly;
     }
@@ -504,7 +506,11 @@ li {
 
     .section--4 {
         background-position: bottom;
-       }
+    }
+
+
+
+
 
 }
 
