@@ -17,28 +17,29 @@
 <body>
     <header class="flex header">
         <div class="header--background">
-            <div class="navbar">
-                <div class="logo" alt="LTSE logo">
-                    <img src="./images/LTSE_logo.png" alt="logo">
+            <nav class="navbar" aria-label="main navigation">
+                <div class="logo" aria-label="LTSE logo">
+                    <a href="./index.html">
+                        <img src="./images/LTSE_logo.png" alt="LTSE logo">
+                    </a>    
                 </div>
-                <nav>
-                    <ul class="primary--nav" id="primary--items">
-                        <li class="primary--item--1">
-                            <a href="#" class="link--name">Exchange</a>
-                        </li>
-                        <li class="primary--item--2--active">
-                            <a href="#" class="link--name">Software</a>
-                            <div class="underline"></div>
-                        </li>
-                        <li class="primary--item--3">
-                            <a href="#" class="link--name">Coalition</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="primary--nav" id="primary--items" aria-label="Primary Navigation">
+                    <li class="primary--item--1">
+                        <a href="#" class="link--name">Exchange</a>
+                    </li>
+                    <li class="primary--item--2--active">
+                        <a href="#" class="link--name">Software</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="primary--item--3">
+                        <a href="#" class="link--name">Coalition</a>
+                    </li>
+                </ul>
+            </nav>
             <nav>
                 <!-- desktop -->
-                <ul class="secondary--nav" id="secondary--items"> 
+                <h2 class="hidden">Secondary Navigation</h2>
+                <ul class="secondary--nav" id="secondary--items" aria-label="Secondary Navigation"> 
                     <li class="secondary--item--1">
                         <a href="#" class="secondary--link--name">LTSE Bridge</a>
                         <p>For Startups</p>
@@ -55,40 +56,42 @@
                 </ul>
 
                 <!-- mobile -->
+                <h2 class="hidden">Mobile Navigation</h2>
                 <div class="flex nav--head">
-                    <img src="./images/LTSE_logo.png" class="logo" alt="logo">
-                    <img src="./images/exit_menu.png" id="mobile-exit-menu-icon" class="exit--menu hide" alt="Exit Menu">
-                    <img src="./images/menu.png" id="mobile-menu-icon" class="menu" alt="Menu">
+                    <img src="./images/LTSE_logo.png" class="logo" alt="LTSE logo">
+                    <button aria-expanded="false" aria-controls="mobile-menu-list">
+                        <img src="./images/exit_menu.png" id="mobile-exit-menu-icon" class="exit--menu hide" alt="Exit Menu">
+                        <img src="./images/menu.png" id="mobile-menu-icon" class="menu" alt="Menu">
+                    </button>    
                 </div>
-                <ul id="mobile-menu-list" class="flex mobile--nav hide">
-                    <li><a href="#">Exchange</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Coalition</a></li>
-                    <li><a href="#">LTSE Bridge</a></li>
-                    <li><a href="#">LTSE Horizon</a></li>
-                    <li><a href="#">Knowledge Base</a></li>
+                <ul id="mobile-menu-list" class="flex mobile--nav hide" aria-hidden="true" role="menu">
+                    <li role="none"><a href="#" role="menuitem">Exchange</a></li>
+                    <li role="none"><a href="#" role="menuitem">Software</a></li>
+                    <li role="none"><a href="#" role="menuitem">Coalition</a></li>
+                    <li role="none"><a href="#" role="menuitem">LTSE Bridge</a></li>
+                    <li role="none"><a href="#" role="menuitem">LTSE Horizon</a></li>
+                    <li role="none"><a href="#" role="menuitem">Knowledge Base</a></li>
                 </ul>
             </nav>
-
             <div class="headline">
-                <h1>Knowledge for 21st Century Company Builders</h1>
+                <h1 title="Knowledge for 21st Century Company Builders">Knowledge for 21st Century Company Builders</h1>
             </div>
         </div>    
     </header>
     <main>
-        <div class="flex section--2">
+        <div class="flex article-container">
             <div class="featured--article">
                 <div class="article--details">
                     <img src="./images/star.png" class="star" alt="star icon">
                     <div class="featured--title">Featured Article</div>
                 </div>
-                <img src="./images/featured_hero.jpeg" class="article--hero" alt="featured--hero">
-                <div class="overline category">INSPIRATION</div>
+                <img src="./images/featured_hero.jpeg" class="article--hero" alt="Featured article hero image">
+                <div class="card-header category">INSPIRATION</div>
                 <h2 class="feature--headline">Set company's startup accelerator as Y Combinator, Techstars, etc.</h2>
                 <p class="feature--description">Captable.io builds accelerator-specific features in collaboration with top
                     accelerators like Y Combinator, Techstars, etc.</p>
                 <div class="flex article--link">
-                    <div class="link">read article</div>
+                    <a href="#" class="link" aria-label="Read article">read article</a>
                     <img src="./images/arrow.png" class="arrow" alt="arrow icon">
                 </div>
             </div>
@@ -96,89 +99,91 @@
             <div class="topics">
                 <div class="topics--header">
                     <div class="topics--title">Topics</div>
-                    <img src="./images/topics_arrow.png" class="topics_arrow" id="topics-menu-open" alt="open arrow icon">
-                    <img src="./images/topics_arrow_close.png" class="topics_arrow_close hide" id="topics-menu-close" alt="close arrow icon">
+                    <button class="topics_arrow" aria-expanded="false" aria-controls="topics-menu-list">
+                        <img src="./images/topics_arrow.png" class="topics_arrow_open" id="topics-menu-open" alt="Open topics menu">
+                        <img src="./images/topics_arrow_close.png" class="topics_arrow_close hide" id="topics-menu-close" alt="Close topics menu">
+                    </button>
                 </div>
-                <ul id="topics-menu-list" class="topics-list hide">
-                    <li><a href="#">Inspiration</a></li>
-                    <li><a href="#">Startup Guide</a></li>
-                    <li><a href="#">Cash</a></li>
-                    <li><a href="#">Equity</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
+                <ul id="topics-menu-list" class="topics-list hide" role="menu" aria-labelledby="topics-menu-toggle">
+                    <li><a href="#" role="menuitem">Inspiration</a></li>
+                    <li><a href="#" role="menuitem">Startup Guide</a></li>
+                    <li><a href="#" role="menuitem">Cash</a></li>
+                    <li><a href="#" role="menuitem">Equity</a></li>
+                    <li><a href="#" role="menuitem">People</a></li>
+                    <li><a href="#" role="menuitem">News</a></li>
+                  </ul>
             </div>
         </div>
-        <div class="section--3">
+        <div class="card-container">
             <h4 class="card--title">Popular Reads</h4>
             <div class="flex cards">
-                <div class="card brown" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-brown">
+                    <div class="card-header">Name</div>
+                    <h4 lass="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card blue" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-blue">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card orange" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-orange">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card green" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-green">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card pink" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-pink">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card yellow" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-yellow">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card blue" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-blue">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card orange" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-orange">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
-                <div class="card brown" id="">
-                    <div class="overline">Name</div>
-                    <h4>A Guide to cap tables for the busy founder.</h4>
-                    <p class="card--paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
+                <div class="card card-brown">
+                    <div class="card-header">Name</div>
+                    <h4 class="card-title">A Guide to cap tables for the busy founder.</h4>
+                    <p class="card-paragraph">Nsectet dolore magnallamco laborinim lab.a aliqua. Ut enim ad minim veniam,
                         quis nostrud.</p>
-                    <div class="author">Author</div>
+                    <div class="card-author">Author</div>
                 </div>
 
             </div>
         </div>
-        <div class="section--4">
+        <div class="subscribe-container">
             <div class="subscribe">
                 <div class="input--section">
                     <h2>Stay in touch</h2>
@@ -190,31 +195,37 @@
             </div>
         </div>
     </main>    
-
     <footer>
-        <div class="footer--container">
-            <div class="footer--logo">
-                <img src="./images/LTSE_logo.png" alt="logo">
-            </div>
-            <div class="footer--list">
+        <div class="footer-container">
+          <div class="footer--logo">
+            <img src="./images/LTSE_logo.png" alt="LTSE Logo">
+          </div>
+          <div class="footer--list">
+            <div class="list">
+                <h2 class="footer--item--head">Exchange</h2>
                 <ul class="footer--items">
-                    <li><a href="#" class="footer--item--head">Exchange</a></li>
                     <li><a href="#" class="footer--item">Market</a></li>
-                    <li><a href="#" class="footer--item">listing</a></li>
+                    <li><a href="#" class="footer--item">Listing</a></li>
                     <li><a href="#" class="footer--item">Regulation</a></li>
                 </ul>
+            </div>
+            <div class="list">
+                <h2 class="footer--item--head">Software</h2>
                 <ul class="footer--items">
-                    <li><a href="#" class="footer--item--head">Software</a></li>
                     <li><a href="#" class="footer--item">LTSE Bridge</a></li>
                     <li><a href="#" class="footer--item">LTSE Horizon</a></li>
                     <li><a href="#" class="footer--item">Knowledge Base</a></li>
                 </ul>
+            </div>
+            <div class="list">
+                <h2 class="footer--item--head">Coalition</h2>
                 <ul class="footer--items">
-                    <li><a href="#" class="footer--item--head">Coalition</a></li>
                     <li><a href="#" class="footer--item">About</a></li>
                 </ul>
+            </div>
+            <div class="list">
+                <h2 class="footer--item--head">Company</h2>
                 <ul class="footer--items">
-                    <li><a href="#" class="footer--item--head">Company</a></li>
                     <li><a href="#" class="footer--item">About Us</a></li>
                     <li><a href="#" class="footer--item">Team</a></li>
                     <li><a href="#" class="footer--item">Careers</a></li>
@@ -224,8 +235,9 @@
                     <li><a href="#" class="footer--item">Blog</a></li>
                 </ul>
             </div>
+          </div>
         </div>
-    </footer>    
+      </footer>  
     <script src="./script.js"></script>
 </body>
 
