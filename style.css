@@ -20,7 +20,7 @@ header {
     flex-direction: column;
     max-width: 1110px;
     margin: auto;
-    
+
 }
 
 .navbar {
@@ -197,10 +197,6 @@ li p {
 
 a {
     text-decoration: none;
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
 }
 
 .subscribe {
@@ -440,11 +436,12 @@ li {
     margin-top: 0;
 }
 
-.topics_arrow, .topics_arrow_close, .mobile--nav {
+.topics_arrow, .topics_arrow_close {
     display: none;
 }
 
-.nav--head {
+#nav-mobile {
+    flex: 1;
     display: none;
 }
 
@@ -459,6 +456,15 @@ button, input[type="submit"], input[type="reset"] {
 
 .hidden {
     display: none;
+}
+
+#desktop-navigation-container {
+    flex-grow: 1;
+}
+
+#desktop-logo-links {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 1000px) {
@@ -517,6 +523,17 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        margin-top: 0;
+    }
+
+    #desktop-navigation-container {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: block;
+    }
 
     footer {
         margin-top: 0px;
@@ -569,10 +586,6 @@ button, input[type="submit"], input[type="reset"] {
     }
 
     .article--details {
-        display: none;
-    }
-
-    .navbar, #secondary--items {
         display: none;
     }
 
